@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <!-- ------------------------------------- main-1 ------------------------------- -->
+<main >  
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-brand" style="width: 100%;">
+          <div class="container-fluid">
+              <img src="image/105.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">  
+            <a class="navbar-brand border-black border-3 border-end ps-2 pe-2" href="#">VoiceCast</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Episodes</a>
+                </li>         
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Guests
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Subscribe</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn" style="background-color: #1A1F71; color:white" type="submit">Search</button>
+              </form>
+              <button type="button" class="btn ms-2 mt-2"style="background-color:#FFC107;" data-bs-toggle="modal" data-bs-target="#loginModel">
+                  Log in
+              </button>
+              <div class="modal fade" id="loginModel" tabindex="-1">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <form class="p-3">
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                      </div>
+                  </div>
+              </div>
+                  </div>                         
+                  </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/101.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
+            <div class="carousel-caption text-start d-none d-md-block">
+              <h1 class="fw-bold">New Episode Every Week</h1>
+              <p class="lead">
+                Conversations with creators, developers, and designers.
+              </p>
+              <button class="btn btn-warning btn-lg">🎙️ Start Listening</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/102.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
+            <div class="carousel-caption text-start d-none d-md-block">
+              <h1 class="fw-bold">VoiceCast Podcast</h1>
+              <p class="lead">
+                Real stories, real experiences, and inspiring voices.
+              </p>
+              <div class="mt-3">
+                <button class="btn btn-warning btn-lg me-2">🎧 Listen Now</button>
+                <button class="btn btn-outline-light btn-lg">🔔 Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/105.jpg" class="d-block w-100" alt="..." width="100%" height="100%" >
+            <div class="carousel-caption text-start d-none d-md-block">
+              <h1 class="fw-bold">Featured Guests</h1>
+              <p class="lead">Interviews with top experts and inspiring leaders.</p>
+              <button class="btn btn-warning btn-lg">👤 Meet Our Guests</button>
+            </div>
+          </div>
+        </div>
+                <div class="d-flex flex-column z-3 position-fixed top-50 end-0 translate-middle-y me-2 gap-3 " >
+                        <a href="#"> <i class="fa-brands fa-square-facebook fa-2x"></i> </a>
+                        <a href="#"> <i class="fa-brands fa-square-whatsapp fa-2x"></i> </a>
+                        <a href="#"> <i class="fa-brands fa-linkedin fa-2x"></i> </a>
+                        <a href="#"> <i class="fa-brands fa-twitter fa-2x"></i> </a>
+                </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</main>
+        <!-- ------------------------------------- section-2 ------------------------------- -->
+<section>
+  <div class=" p-3 text-dark" style="background-color: #F4F4F9 ;">
+      <h2 class="fs-2 fw-bold mb-3" style="color:#1A1F71;">Welcome to Our Podcast</h2>
+      <p>Join us on an exciting audio journey exploring topics from culture, technology, and art to success stories and personal growth.</p>
+      <button type="button" class="btn" style="background-color:#FFC107; color:#1A1F71; margin-top:15px;">
+        Listen Now
+    </button>
+  </div>
+  <hr class="border border-2 border-primary opacity-50">
+  <div class=" d-flex justify-content-center align-items-center p-4">
+      <h2 class="fs-3 fw-bold" style="color:#1A1F71;">Fly With Us in the World of Sound</h2>
+  </div>
+  <div>
+      <div class="accordion accordion-flush" id="accordionFlushExample" >
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed border-bottom border-black" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Featured Episodes
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> Explore our handpicked episodes offering rich and engaging content across a variety of topics.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed border-bottom border-black" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Our Guests
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">We welcome inspiring guests from all fields to share their experiences and stories with our audience.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed border-bottom border-black" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Join Our Community
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Become part of our audio community, share your thoughts, and give suggestions for upcoming episodes.
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+    <hr class="mt-4 mb-4" style="border-color:#CCCCCC;">
+</section>        
+        <!-- ------------------------------------- section-3 ------------------------------- -->
+<section class="py-5">
+  <div class="container">
+    <div class="mb-5">
+      <div class="rounded p-4 bg-secondary text-white mb-3">
+        <h3 class="text-center">Translate from Arabic to English</h3>
+      </div>
+      <div class="p-4 bg-light text-white rounded">
+        <h2 class="mb-3 text-dark">Write and Translate <span class="text-warning">Press Here</span></h2>
+<button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  copy
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">copy the massage</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Copied
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+        <textarea class="w-100 p-2 rounded" placeholder="Translation will appear here..." style="height: 150px;"></textarea>
+      </div>
+    </div>
+    <div class="mb-5">
+      <div class="rounded p-4 bg-secondary text-white mb-3">
+        <h3 class="text-center">Translate from Arabic to French</h3>
+      </div>
+      <div class="p-4 bg-light text-white rounded">
+        <h2 class="mb-3 text-dark">Write and Translate <span class="text-warning">Press Here</span></h2>
+<button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  copy
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">copy the massage</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Copied
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <textarea class="w-100 p-2 rounded" placeholder="Translation will appear here..." style="height: 150px;"></textarea>
+      </div>
+    </div>
+    <div class="mb-5">
+      <div class="rounded p-4 bg-secondary text-white mb-3">
+        <h3 class="text-center">Translate from Arabic to German</h3>
+      </div>
+      <div class="p-4 bg-light text-white rounded">
+        <h2 class="mb-3 text-dark">Write and Translate <span class="text-warning">Press Here</span></h2>
+<button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  copy
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">copy the massage</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Copied
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <textarea class="w-100 p-2 rounded" placeholder="Translation will appear here..." style="height: 150px;"></textarea>
+      </div>
+    </div>
+  </div>
+</section>
+        <!-- ------------------------------------- section-4 ------------------------------- -->
+<section>
+    <div class="section-4">
+    </div>
+</section>
+        <!-- ------------------------------------- section-5 ------------------------------- -->
+<section>
+          <div class="p-4 mt-4 bg-secondary">
+            <h3 class="text-center text-white">Discover Our Latest Podcasts</h3>
+        </div>
+          <div class="container mt-4">
+            <div class="row g-4 justify-content-center">
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/106.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 1: The Beginning</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      Explore the start of our journey and hear about the ideas that inspired this podcast.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/107.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 2: Behind the Scenes</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      A closer look at our production process and the people who make it all happen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/108.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 3: Special Guest</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      Join us for a conversation with a special guest sharing insights and stories.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/109.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 4: The Beginning</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      Join us for a conversation with a special guest sharing insights and stories.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/110.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 5: Behind the Scenes</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      Explore the start of our journey and hear about the ideas that inspired this podcast.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/111.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 6: Special Guest</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      A closer look at our production process and the people who make it all happen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/112.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 7: Listener Stories</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      Hear amazing stories from our listeners and how our podcast impacted their lives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mx-auto shadow p-3 bg-body-tertiary rounded special-card">
+                  <img src="image/113.jpg" class="card-img-top card-img-limit" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Episode 8: Tips & Tricks</h5>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-warning">Listen</button>
+                    </div>
+                    <p class="card-text">
+                      Practical tips, advice, and insights on topics we cover in our podcast episodes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            
+       
+          </div>
+</section>
+        <!-- ------------------------------------- section-6 ------------------------------- -->
+<section>
+          <div class="section-6 mt-4" style="height:350px;"></div>
+</section>        
+        <!-- ------------------------------------- section-7 ------------------------------- -->
+<section>
+  <div class="p-4 mt-4" style="background-color: #f5f5f5;">
+    <h3 class="text-center" style="color: #333;">Our Top Episodes</h3>
+  </div>
+  <div class="d-flex flex-wrap justify-content-center mt-4 gap-4">
+    <div style="width:250px; height: 320px;" class="rounded position-relative thanks-card shadow-sm">
+      <img src="image/118.jpg" alt="Episode Cover" width="100%" height="100%" class="rounded">
+      <div class="p-3 position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5); color: #f8f8f8;">
+        <h4>Episode 12: The Creative Mind</h4>
+        <p>March 22, 2026</p>
+        <img src="image/118.jpg" class="rounded-pill mt-2" alt="Host" width="80px" height="80px">
+        <h5>Mohamed</h5>
+        <p>Host & Storyteller</p>
+      </div>
+    </div>
+    <div style="width:250px; height: 320px;" class="rounded position-relative thanks-card shadow-sm">
+      <img src="image/119.jpg" alt="Episode Cover" width="100%" height="100%" class="rounded">
+      <div class="p-3 position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5); color: #f8f8f8;">
+        <h4>Episode 8: Behind the Scenes</h4>
+        <p>Feb 15, 2026</p>
+        <img src="image/119.jpg" class="rounded-pill mt-2" alt="Host" width="80px" height="80px">
+        <h5>Aisha</h5>
+        <p>Co-Host</p>
+      </div>
+    </div>
+    <div style="width:250px; height: 320px;" class="rounded position-relative thanks-card shadow-sm">
+      <img src="image/120.jpg" alt="Episode Cover" width="100%" height="100%" class="rounded">
+      <div class="p-3 position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5); color: #f8f8f8;">
+        <h4>Episode 5: Listener Stories</h4>
+        <p>Jan 30, 2026</p>
+        <img src="image/120.jpg" class="rounded-pill mt-2" alt="Host" width="80px" height="80px">
+        <h5>Karim</h5>
+        <p>Guest Speaker</p>
+      </div>
+    </div>
+  </div>
+</section>
+        <!-- ------------------------------------- section-8 ------------------------------- -->
+<section>
+  <div class="p-4 mt-4" style="background-color: #f5f5f5;">
+    <h3 class="text-center" style="color: #333;">More Episodes</h3>
+  </div>
+  <div class="p-4">
+    <div class="card mb-3 clip-slant-card box-shadow-strong">
+      <div class="row g-0">
+        <div class="col-md-4 d-none d-md-block img-wrapper">
+          <img src="image/122.jpg"
+               class="img-fluid h-100 clip-slant rounded-start image-scale"
+               alt="Episode Cover">
+        </div>
+        <div class="col-12 d-block d-md-none img-wrapper image-clip-slant-2">
+          <img src="image/122.jpg"
+               class="img-fluid rounded-top image-scale"
+               alt="Episode Cover">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-center m-auto" style="width: 50%;">Episode 14: Creative Sparks</h5>
+            <h6 class="border-bottom border-4 border-warning text-center m-auto" style="width: 50%;">Mon, May 25th 2030</h6>
+            <p class="card-text">
+              Dive into the creative process behind our latest podcast episode and discover tips for sparking your own ideas.
+            </p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <button class="btn btn-secondary btn-lg mt-2">Listen Now</button>
+            <button class="btn btn-secondary btn-lg mt-2">Spotify</button>
+            <button class="btn btn-secondary btn-lg mt-2">Apple Podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-4">
+    <div class="card mb-3 clip-slant-card box-shadow-strong">
+      <div class="row g-0">
+        <div class="col-md-8 order-1 order-md-0">
+          <div class="card-body">
+            <h5 class="card-title text-center m-auto" style="width: 50%;">Episode 13: Behind the Mic</h5>
+            <h6 class="border-bottom border-4 border-warning text-center m-auto" style="width: 50%;">Sun, May 18th 2030</h6>
+            <p class="card-text">
+              Explore what goes on behind the scenes in producing a professional podcast episode.
+            </p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 10 mins ago</small></p>
+            <button class="btn btn-secondary btn-lg mt-2">Listen Now</button>
+            <button class="btn btn-secondary btn-lg mt-2">Spotify</button>
+            <button class="btn btn-secondary btn-lg mt-2">Apple Podcasts</button>
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block order-md-1 img-wrapper">
+          <img src="image/121.jpg" class="img-fluid h-100 clip-slant-2 rounded-start image-scale" alt="Episode Cover">
+        </div>
+        <div class="col-12 d-block d-md-none order-0 img-wrapper">
+          <img src="image/121.jpg" class="img-fluid rounded-top image-scale image-clip-slant-2" alt="Episode Cover">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-4">
+    <div class="card mb-3 clip-slant-card box-shadow-strong">
+      <div class="row g-0">
+        <div class="col-md-4 d-none d-md-block img-wrapper">
+          <img src="image/123.jpg" class="img-fluid h-100 clip-slant rounded-start image-scale" alt="Episode Cover">
+        </div>
+        <div class="col-12 d-block d-md-none img-wrapper">
+          <img src="image/123.jpg" class="img-fluid rounded-top image-scale image-clip-slant-2" alt="Episode Cover">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-center m-auto" style="width: 50%;">Episode 12: Listener Stories</h5>
+            <h6 class="border-bottom border-4 border-warning text-center m-auto" style="width: 50%;">Sat, May 10th 2030</h6>
+            <p class="card-text">
+              Hear real stories from our listeners and how our podcast inspires their daily lives.
+            </p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
+            <button class="btn btn-secondary btn-lg mt-2">Listen Now</button>
+            <button class="btn btn-secondary btn-lg mt-2">Spotify</button>
+            <button class="btn btn-secondary btn-lg mt-2">Apple Podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-4">
+    <div class="card mb-3 clip-slant-card box-shadow-strong">
+      <div class="row g-0">
+        <div class="col-md-8 order-1 order-md-0">
+          <div class="card-body">
+            <h5 class="card-title text-center m-auto" style="width: 50%;">Episode 11: Tips for Creators</h5>
+            <h6 class="border-bottom border-4 border-warning text-center m-auto" style="width: 50%;">Fri, May 3rd 2030</h6>
+            <p class="card-text">
+              Get practical advice for starting your own podcast and improving your content.
+            </p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 15 mins ago</small></p>
+            <button class="btn btn-secondary btn-lg mt-2">Listen Now</button>
+            <button class="btn btn-secondary btn-lg mt-2">Spotify</button>
+            <button class="btn btn-secondary btn-lg mt-2">Apple Podcasts</button>
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block order-md-1 img-wrapper">
+          <img src="image/124.jpg" class="img-fluid h-100 clip-slant-2 rounded-start image-scale" alt="Episode Cover">
+        </div>
+        <div class="col-12 d-block d-md-none order-0 img-wrapper">
+          <img src="image/124.jpg" class="img-fluid rounded-top image-scale image-clip-slant-2" alt="Episode Cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <!-- ------------------------------------- section-9 ------------------------------- -->
+<section>
+  <div class="d-flex justify-content-evenly mt-4 row " style="width: 100%;">
+      <div class="col-sm-6 col-md-4 col-lg-3 text-center border mt-4 thanks-card box-shadow-medium" style="width: 200px; height: 200px;">
+          <h4 class="mb-4 mt-4">Listen on Spotify</h4>
+          <a href="https://spotify.com" target="_blank" style="color: #1DB954; text-decoration: none;">
+            <i class="fa-brands fa-spotify fa-3x d-block mt-4"></i>
+          </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 text-center border mt-4 thanks-card box-shadow-medium" style="width: 200px; height: 200px;">
+        <h4 class="mb-4 mt-4">Listen on Apple Podcasts</h4>
+        <a href="https://podcasts.apple.com" target="_blank" style="color: #000000; text-decoration: none;">
+          <i class="fa-brands fa-apple fa-3x d-block mt-4"></i>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 text-center border mt-4 thanks-card box-shadow-medium" style="width: 200px; height: 200px;">
+        <h4 class="mb-4 mt-4">Listen on SoundCloud</h4>
+        <a href="https://soundcloud.com" target="_blank" style="color: #FF8800; text-decoration: none;">
+          <i class="fa-brands fa-soundcloud fa-3x d-block mt-4"></i>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 text-center border mt-4 thanks-card box-shadow-medium" style="width: 200px; height: 200px;">
+        <h4 class="mb-4 mt-4">Watch on YouTube</h4>
+        <a href="https://youtube.com" target="_blank" style="color: #FF0000; text-decoration: none;">
+          <i class="fa-brands fa-youtube fa-3x d-block mt-4"></i>
+        </a>
+      </div>
+  </div>
+</section>
+        <!-- ------------------------------------- footer-10 ------------------------------- -->
+<footer class="bg-light pb-2">
+  <hr class="border border-1 border-black">
+  <div class="container">
+    <div class="row border-bottom border-black">
+      <div class="text-center col-12 col-sm-4 mt-3">
+        <img src="image/115.jpg" alt="Podcast Logo" width="150px" height="150px">
+        <h6>Podcast Name</h6>
+        <p>Stories, insights, and conversations you love</p>
+      </div>
+      <div class="text-center col-12 col-sm-4 mt-3">
+        <img src="image/116.jpg" alt="Podcast Logo" width="150px" height="150px">
+        <h6>Podcast Name</h6>
+        <p>Discover new episodes every week</p>
+      </div>
+      <div class="text-center col-12 col-sm-4 mt-3">
+        <img src="image/117.jpg" alt="Podcast Logo" width="150px" height="150px">
+        <h6>Podcast Name</h6>
+        <p>Join our community of listeners</p>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="text-center col-12 col-sm-4">
+        <h6>Follow Us</h6>
+        <p>Spotify | Apple Podcasts | Google Podcasts</p>
+      </div>
+      <div class="text-center col-12 col-sm-4">
+        <h6>Contact</h6>
+        <p>Email: info@podcast.com</p>
+        <p>Instagram: @podcast</p>
+      </div>
+      <div class="text-center col-12 col-sm-4">
+        <h6>About</h6>
+        <p>Learn more about our mission and hosts</p>
+      </div>
+    </div>
+  </div>
+  <hr class="border border-1 border-black">
+  <h6 class="text-center">&copy; 2026 Podcast Name. All rights reserved.</h6>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+      </body>
+</html>
